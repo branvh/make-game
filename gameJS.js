@@ -13,7 +13,13 @@
 		currentWord: '',
 		guessesRemaining: -1,
 		lettersGuessed: [],
-		createWord: function (){}, // Tyler
+		createWord: function(){
+
+		currentWord = wordArray[Math.floor(Math.random() * wordArray.length)];
+			              
+		             
+
+		}, // Tyler
 		winCheck: function () {
 
 			var requiredScore = currentWord.length;
@@ -31,13 +37,12 @@
 			else return;
 
 		}, // Brandon
+
 		guessCheck: function () {
 
-			$(".container").keyup( function(){
+			$(".container").keyup(function(){
 
-				for(i = 0; i<currentWord.length()){
-
-					if(this === currentWord[i]){
+				if(currentWord.indexOf(this) != -1){
 
 						
 					}
