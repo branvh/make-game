@@ -40,12 +40,14 @@
 			if (guessesRemaining === 0){
 
 				alert('you lost, try again');
-				//how do we want to reset game?
+				//reset page
+				game.gameStart();
 			}
 			else if (score === requiredScore){
 
 				alert('you won!!');
-				//how to handle update and start over?
+				//reset page
+				game.gameStart();
 			}
 			else return 1;
 		},  
