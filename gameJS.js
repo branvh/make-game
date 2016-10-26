@@ -18,7 +18,7 @@
 		updateScreen: function () , //
 		updateLettersGuessed: function (), //
 		wordArray: ["word","class", "javascript", "cubs", "indians", "lastword"],  
-		gameStart: function () //
+		gameStart: function (); //Test
 
 	}
 
