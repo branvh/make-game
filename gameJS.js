@@ -14,7 +14,22 @@
 		lettersGuessed: [],
 		createWord: function (){}, // Tyler
 		winCheck: function () {}, // Brandon
-		guessCheck: function () {}, // Alan
+		guessCheck: function () {
+
+			$(".container").keyup( function(){
+
+				for(i = 0; i<currentWord.length()){
+
+					if(this === currentWord[i]){
+
+						
+					}
+
+				}
+
+			})
+
+		}, // Alan
 		updateScreen: function () {} , // Brandon
 		updateLettersGuessed: function () {}, // Alan
 		validKeyCheck: function () {}, // Henry
