@@ -10,10 +10,27 @@
 	var game = {
 
 		score: -1,
+		currentWord: '',
 		guessesRemaining: -1,
 		lettersGuessed: [],
 		createWord: function (){}, // Tyler
-		winCheck: function () {}, // Brandon
+		winCheck: function () {
+
+			var requiredScore = currentWord.length;
+
+			if (guessesRemaining === 0){
+
+				alert('you lost, try again');
+				//how do we want to reset game?
+			}
+			else if (score === requiredScore){
+
+				alert('you won!!');
+				//how to handle update and start over?
+			}
+			else return;
+
+		}, // Brandon
 		guessCheck: function () {
 
 			$(".container").keyup( function(){
