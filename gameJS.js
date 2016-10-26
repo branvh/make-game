@@ -14,6 +14,11 @@
 
 		//guess check also calls ?win check and if that returns 1, move to update screen
 
+		var letter = '';
+		
+		
+		game.validKeyCheck();
+
 
 	});
 
@@ -104,7 +109,12 @@
 
 		}, // Alan
 		updateLettersGuessed: function () {}, // Alan
-		validKeyCheck: function () {}, // Henry
+		validKeyCheck: function () {
+			$(document).keyup(function(event) {
+				letter = String.fromCharCode(event.keyCode).toLowerCase();
+				console.log(letter);
+			});
+		}, // Harry
 		wordArray: ["word","class", "javascript", "cubs", "indians", "lastword"],  
 		gameStart: function (){} // Tyler
 
