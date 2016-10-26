@@ -102,19 +102,19 @@
 
 	        console.log(letter);
 
-	}, // Harry
-	wordArray: ["word", "class", "javascript", "cubs", "indians", "lastword"],
+	    }, // Harry
+	    wordArray: ["word", "class", "javascript", "cubs", "indians", "lastword"],
 	    gameStart: function() {
 
-	    	score, guessesRemaining = 0;
-	    	lettersGuessed = [];
+	        score,
+	        guessesRemaining = 0;
+	        lettersGuessed = [];
 
-	    	//new word
-	    	this.currentWord();
+	        //new word
+	        this.currentWord();
 
-	    	//clear out the screen
-	    	this.updateScreen();
-
-	    } // Tyler
+	        //clear out the screen
+	        this.updateScreen();
+	    },
 
 	}
