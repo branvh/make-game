@@ -24,7 +24,13 @@
 		currentWord: '',
 		guessesRemaining: 0,
 		lettersGuessed: [],
-		createWord: function (){}, // Tyler
+		createWord: function(){
+
+		currentWord = wordArray[Math.floor(Math.random() * wordArray.length)];
+			              
+		             
+
+		}, // Tyler
 		winCheck: function () {
 		//win defined as score = word length - 1
 		//assumes score gets set to 0 at game start and earn a point each correct guess
@@ -42,9 +48,21 @@
 				//how to handle update and start over?
 			}
 			else return 1;
-
 		},  
-		guessCheck: function () {}, // Alan
+		guessCheck: function () {
+
+			$(".container").keyup(function(){
+
+				if(currentWord.indexOf(this) != -1){
+
+						
+					}
+
+				}
+
+			})
+
+		}, // Alan
 		updateScreen: function () {
 
 			var wordLength = currentWord.Length;
@@ -69,7 +87,22 @@
 
 			$('#letters-guessed').html(lettersGuessed.join(","));
 
-		} ,  
+		}, // Brandon
+
+		guessCheck: function () {
+
+			$(".container").keyup(function(){
+
+				if(currentWord.indexOf(this) != -1){
+
+						
+					}
+
+				}
+
+			})
+
+		}, // Alan
 		updateLettersGuessed: function () {}, // Alan
 		validKeyCheck: function () {}, // Henry
 		wordArray: ["word","class", "javascript", "cubs", "indians", "lastword"],  
